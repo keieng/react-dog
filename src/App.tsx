@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Header } from "./Header";
 import { Description } from "./Description";
-import { DogListContainer } from "./DogListContainer";
+import { DogImageContainer } from "./DogImageContainer";
 
-export const App: React.VFC = () => {
+export const App = () => {
+  useState;
+  const [selectBreed, setSelectBreed] = useState([]);
+
   return (
     <>
       <Header />
       <main>
-        <Description />
-        <DogListContainer />
+        <Description setSelectBreed={setSelectBreed} />
+        <DogImageContainer selectBreed={selectBreed} />
       </main>
     </>
   );

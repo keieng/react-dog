@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.my-masonry-grid {
+  display: flex;
+  margin-left: -30px; /* 項目間の余白のサイズ */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* 項目間の余白のサイズ */
+  background-clip: padding-box;
+}
+
+.my-masonry-grid_column > .event-card {
+  /* background: grey; */
+  margin-bottom: 30px;
+}
